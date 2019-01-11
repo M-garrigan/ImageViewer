@@ -1,0 +1,2 @@
+
+This is an application that retrieves image data from an api and allows the user to view the 150 x 150 pixel image and click to see the full 600 x 600 pixel version. Also along the top navagation bar there is a favorites button and a counter that will track any of the images you select and view them on another page. Also a set of three buttons in the top right corner will allow you to select how many images are shown at a given time.
