@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import Nav from '../components/Nav.js';
+
 import { 
   updateDisplayLimit,
   incrementFavoritesCounter,

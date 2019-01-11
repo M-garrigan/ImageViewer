@@ -15,6 +15,12 @@ export const incrementFavoritesCounter = () => {
     value: 1
   }
 };
+export const decrementFavoritesCounter = () => {
+  return {
+    type: 'DECREMENT_FAVORITES_COUNTER',
+    value: 1
+  }
+};
 
 // an array of images in the favorites group
 export const addImageToFavoritesArray = image => {
@@ -30,8 +36,7 @@ export const removeImageFromFavoritesArray = index => {
   }
 };
 
-// boolean indicating if the favorite button is pressed
-// as that will trigger the Body component to conditionally render jsx.
+// boolean indicating if the button is pressed
 export const toggleFavoritesButtonSelected = () => {
   return {
     type: 'TOGGLE_FAVORITES_BUTTON_SELECTED'

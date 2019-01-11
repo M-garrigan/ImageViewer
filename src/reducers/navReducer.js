@@ -17,10 +17,6 @@ const navReducer = (state = defaultState, action) => {
     case 'INCREMENT_FAVORITES_COUNTER':
       newState.favoritesCounter += action.value;
       break;
-  
-    case 'DECREMENT_FAVORITES_COUNTER':
-      newState.favoritesCounter -= action.value;
-      break;
       
     case 'HANDLE_FAVORITE_SELECTED':
       newState.favoritesArrayOfImages =  [...newState.favoritesArrayOfImages, action.element];
