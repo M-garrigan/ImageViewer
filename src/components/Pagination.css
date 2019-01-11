@@ -1,0 +1,26 @@
+
+#pagination-wrapper {
+  align-items: center;
+  background: rgb(56, 55, 55);
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+#pagination-button-group {
+  align-items: center;
+  background: rgb(56, 55, 55);
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+}
+
+.pag-item {
+  background: gray;
+  color: white;
+  font-size: 3vw;
+  height: 75px;
+  margin: 10px 20px;
+  text-align: center;
+  width: auto;
+}
