@@ -1,0 +1,21 @@
+
+
+/* nav */
+.nav-wrapper {
+  align-items: center;
+  display: flex;
+  height: 10vw;
+  justify-content: space-between;
+}
+.nav-title {
+  font-size: 4vw;
+}
+.button-group {
+  display: flex;
+}
+.nav-button {
+  border: none;
+  border-radius: 1vw;
+  color: brown;
+  font-size: 3vw;
+}
