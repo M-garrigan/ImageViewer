@@ -8,8 +8,9 @@ const pug = require('pug');
 
 // handlers
 const rootHandler = require('./handlers/rootHandler.js');
+const redditHandler = require('./handlers/redditHandler.js');
 
-const { initES } = require('./es.js');
+const { initES, createES } = require('./es.js');
 
 const startServer = async () => {
   const server = Hapi.server({
@@ -33,6 +34,11 @@ const startServer = async () => {
     handler: (request, h) => h.file('styles.css')
   });
 
+  server.route({
+    method: 'GET',
+    path: '/reddit',
+    handler: redditHandler
+  });
 
   server.route({
     method: 'GET',
