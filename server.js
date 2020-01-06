@@ -8,7 +8,7 @@ const pug = require('pug');
 
 // handlers
 const rootHandler = require('./handlers/rootHandler.js');
-const redditHandler = require('./handlers/redditHandler.js');
+const newsHandler = require('./handlers/newsHandler.js');
 
 const { initES, createES } = require('./es.js');
 
@@ -36,8 +36,8 @@ const startServer = async () => {
 
   server.route({
     method: 'GET',
-    path: '/reddit',
-    handler: redditHandler
+    path: '/news',
+    handler: newsHandler
   });
 
   server.route({
