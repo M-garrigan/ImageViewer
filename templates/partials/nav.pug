@@ -1,7 +1,11 @@
 
 nav.nav-wrapper
-  p.nav-title trending
+  a(class=home-link href='/')
+    p.nav-title ehp
   .button-group
-    button.nav-button Reddit
-    button.nav-button Google
-    button.nav-button Twitter
+    a(class=es-link href='/elasticsearch')
+      button.nav-button elasticsearch
+    a(class=hapi-link href='/hapi')
+      button.nav-button hapi js
+    a(class=pug-link href='/pug')
+      button.nav-button pug

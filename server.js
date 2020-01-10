@@ -7,6 +7,9 @@ const Path = require('path');
 const pug = require('pug');
 
 // handlers
+const esHandler = require('./handlers/esHandler.js');
+const hapiHandler = require('./handlers/hapiHandler.js');
+const pugHandler = require('./handlers/pugHandler.js');
 const rootHandler = require('./handlers/rootHandler.js');
 const newsHandler = require('./handlers/newsHandler.js');
 
@@ -25,7 +28,7 @@ const startServer = async () => {
       pug: require('pug')
     },
     relativeTo: __dirname,
-    path: 'templates'
+    path: 'templates/pages/'
   });
 
   server.route({
@@ -36,8 +39,20 @@ const startServer = async () => {
 
   server.route({
     method: 'GET',
-    path: '/news',
-    handler: newsHandler
+    path: '/elasticsearch',
+    handler: esHandler
+  });
+
+  server.route({
+    method: 'GET',
+    path: '/hapi',
+    handler: hapiHandler
+  });
+
+  server.route({
+    method: 'GET',
+    path: '/pug',
+    handler: pugHandler
   });
 
   server.route({
