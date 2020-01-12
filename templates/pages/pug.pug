@@ -4,6 +4,21 @@ html(lang='en')
   include ../partials/head.pug
   body
     include ../partials/nav.pug
-    .es-wrapper
+    .pug-wrapper
       h1 Pug JS 
+      p A template engine implemented in JavaScript
+      p See how the Pug engine works
+      p An example of Pug file and the HTML it generates
+      p Pug is the view portion of the ehp Stack
+
+      .intro-pug-html 
+        pre
+          code(class=['pug', 'language-pug'])
+            #{pugSample}
+        pre
+          code(class=['html', 'language-html'])
+            #{htmlSample}
+
+  script(src='/prism.js')
+
       

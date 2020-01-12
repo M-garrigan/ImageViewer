@@ -1,4 +1,8 @@
 /* globals */
+* {
+  margin: 0;
+  padding: 0;
+}
 a {
   cursor: pointer;
   text-decoration: none;
@@ -7,6 +11,7 @@ a {
 /* nav */
 .nav-wrapper {
   align-items: center;
+  background: #333;
   display: flex;
   height: 10vw;
   justify-content: space-between;
@@ -15,8 +20,10 @@ a {
 
 }
 
-.nav-title {
-  font-size: 4vw;
+.nav-logo {
+  background-image: url('/ehp.svg');
+  height: 9vw;
+  width: 18vw;
 }
 .button-group {
   align-items: center;

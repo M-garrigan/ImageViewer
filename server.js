@@ -33,8 +33,32 @@ const startServer = async () => {
 
   server.route({
     method: 'GET',
-    path: '/styles.css',
-    handler: (request, h) => h.file('styles.css')
+    path: '/index.css',
+    handler: (request, h) => h.file('public/styles/index.css')
+  });
+
+  server.route({
+    method: 'GET',
+    path: '/pug.css',
+    handler: (request, h) => h.file('public/styles/pug.css')
+  });
+
+  server.route({
+    method: 'GET',
+    path: '/ehp.svg',
+    handler: (request, h) => h.file('public/svgs/ehp.svg')
+  });
+
+  server.route({
+    method: 'GET',
+    path: '/prism.js',
+    handler: (request, h) => h.file('node_modules/prismjs/prism.js')
+  });
+
+  server.route({
+    method: 'GET',
+    path: '/prism-okaidia.css',
+    handler: (request, h) => h.file('node_modules/prismjs/themes/prism-okaidia.css')
   });
 
   server.route({
@@ -60,6 +84,8 @@ const startServer = async () => {
     path: '/',
     handler: rootHandler
   });
+
+  // console.log('table: ', server.table())
 
   await server.start();
   console.log('Server running on %s', server.info.uri);
