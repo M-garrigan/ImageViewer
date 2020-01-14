@@ -1,7 +1,4 @@
 
-const Prism = require('prismjs');
-const loadLanguages = require('prismjs/components/');
-loadLanguages(['pug']);
 const pug = require('pug');
 
 const pugStr = `
@@ -14,11 +11,10 @@ html(lang='en')
       form.reddit-form(action="/reddit", method="get")
         input.reddit-input(type="text", id="reddit-input", name="reddit")
         button.reddit-button(type="submit") Submit
-      .reddit-viewer #{redditPost}
-      `;
-let html = pug.compile(pugStr)
-// console.log('puggy: ', typeof html())
-// console.log('puggy: ', html())
+      .reddit-viewer #{redditPost}`;
+
+let html = pug.compile(pugStr, {pretty: true})
+
 
 module.exports = (request, h) => h.view(
   'pug',

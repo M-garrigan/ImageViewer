@@ -21,7 +21,7 @@ a {
 }
 
 .nav-logo {
-  background-image: url('/ehp.svg');
+  background-image: url('/svgs/ehp.svg');
   height: 9vw;
   width: 18vw;
 }
@@ -38,4 +38,20 @@ a {
   color: brown;
   font-size: 2.2vw;
   
+}
+
+.es-icon {
+  background-image: url('/svgs/es-outline.svg');
+  height: 7vw;
+  width: 7vw;
+}
+.pug-icon {
+  background-image: url('/svgs/pug-outline.svg');
+  height: 7vw;
+  width: 7vw;
+}
+.hapi-icon {
+  background-image: url('/svgs/hapi-outline.svg');
+  height: 7vw;
+  width: 7vw;
 }

@@ -6,6 +6,9 @@ const Inert = require('@hapi/inert');
 const Path = require('path');
 const pug = require('pug');
 
+// static routes
+const svgObj = require('./routes/svgs.js');
+
 // handlers
 const esHandler = require('./handlers/esHandler.js');
 const hapiHandler = require('./handlers/hapiHandler.js');
@@ -43,10 +46,17 @@ const startServer = async () => {
     handler: (request, h) => h.file('public/styles/pug.css')
   });
 
+  // static svgs
   server.route({
     method: 'GET',
-    path: '/ehp.svg',
-    handler: (request, h) => h.file('public/svgs/ehp.svg')
+    path: '/svgs/{file}',
+    handler: (request, h) => {
+      let file = request.params.file;
+      
+      if (svgObj[file]) {
+        return h.file(`public/svgs/${svgObj[file]}`);
+      } 
+    }
   });
 
   server.route({
@@ -57,8 +67,26 @@ const startServer = async () => {
 
   server.route({
     method: 'GET',
+    path: '/prism-line-numbers.js',
+    handler: (request, h) => h.file('node_modules/prismjs/plugins/line-numbers/prism-line-numbers.min.js')
+  });
+
+  server.route({
+    method: 'GET',
+    path: '/prism-pug.js',
+    handler: (request, h) => h.file('node_modules/prismjs/components/prism-pug.js')
+  });
+
+  server.route({
+    method: 'GET',
     path: '/prism-okaidia.css',
     handler: (request, h) => h.file('node_modules/prismjs/themes/prism-okaidia.css')
+  });
+
+  server.route({
+    method: 'GET',
+    path: '/prism-line-numbers.css',
+    handler: (request, h) => h.file('node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css')
   });
 
   server.route({

@@ -12,13 +12,13 @@ html(lang='en')
       p Pug is the view portion of the ehp Stack
 
       .intro-pug-html 
-        pre
-          code(class=['pug', 'language-pug'])
-            #{pugSample}
-        pre
-          code(class=['html', 'language-html'])
-            #{htmlSample}
+        pre.line-numbers
+          code(class=['pug', 'language-pug']) #{pugSample}
+        pre.line-numbers
+          code(class=['html', 'language-html']) #{htmlSample}
 
   script(src='/prism.js')
+  script(src='/prism-line-numbers.js')
+  script(src='/prism-pug.js')
 
       
