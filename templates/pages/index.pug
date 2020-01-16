@@ -4,6 +4,23 @@ html(lang='en')
   include ../partials/head.pug
   body
     include ../partials/nav.pug
-    h1 #{title}
     .index-wrapper
-      p #{message}
+      section.sec-1
+        include ../../public/svgs/sec-1-pattern.svg
+        h1.index-title EHP is a JS technology stack for developing web applications
+      section.sec-2
+        h3 Features
+          ol
+            li Server Side Rendered
+            li Highly Scalable
+            li Immutable State Machine
+      section.sec-3
+        h3 Core Components
+          ol
+            li Elasticsearch
+            li Hapi
+            li Pug JS
+            li Redux
+
+    
+    

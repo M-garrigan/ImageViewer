@@ -1,2 +1,2 @@
 
-module.exports = (request, h) => h.view('es');
+module.exports = (request, h) => h.view('es', {linkActive: 'es'});

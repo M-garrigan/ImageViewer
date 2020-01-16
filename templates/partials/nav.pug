@@ -1,11 +1,18 @@
 
 nav.nav-wrapper
   a(class=home-link href='/')
-    .nav-logo
+    include ../../public/svgs/ehp.svg
   .button-group
-    a(class=es-link href='/elasticsearch')
+    a(
+      class= linkActive === 'es' ? 'es': 'es-link' 
+      href='/elasticsearch'
+    )
       .es-icon
-    a(class=hapi-link href='/hapi')
+    a(
+      class= linkActive === 'hapi' ? 'hapi' : 'hapi-link' 
+      href='/hapi'
+    )
       .hapi-icon
     a(class=pug-link href='/pug')
       .pug-icon
+  

@@ -8,6 +8,7 @@ const pug = require('pug');
 
 // static routes
 const svgObj = require('./routes/svgs.js');
+const cssObj = require('./routes/css.js');
 
 // handlers
 const esHandler = require('./handlers/esHandler.js');
@@ -34,19 +35,7 @@ const startServer = async () => {
     path: 'templates/pages/'
   });
 
-  server.route({
-    method: 'GET',
-    path: '/index.css',
-    handler: (request, h) => h.file('public/styles/index.css')
-  });
-
-  server.route({
-    method: 'GET',
-    path: '/pug.css',
-    handler: (request, h) => h.file('public/styles/pug.css')
-  });
-
-  // static svgs
+  // static svg files
   server.route({
     method: 'GET',
     path: '/svgs/{file}',
@@ -55,6 +44,19 @@ const startServer = async () => {
       
       if (svgObj[file]) {
         return h.file(`public/svgs/${svgObj[file]}`);
+      } 
+    }
+  });
+
+  // static css files
+  server.route({
+    method: 'GET',
+    path: '/styles/{file}',
+    handler: (request, h) => {
+      let file = request.params.file;
+      
+      if (cssObj[file]) {
+        return h.file(cssObj[file]);
       } 
     }
   });
@@ -77,17 +79,6 @@ const startServer = async () => {
     handler: (request, h) => h.file('node_modules/prismjs/components/prism-pug.js')
   });
 
-  server.route({
-    method: 'GET',
-    path: '/prism-okaidia.css',
-    handler: (request, h) => h.file('node_modules/prismjs/themes/prism-okaidia.css')
-  });
-
-  server.route({
-    method: 'GET',
-    path: '/prism-line-numbers.css',
-    handler: (request, h) => h.file('node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css')
-  });
 
   server.route({
     method: 'GET',
@@ -111,6 +102,15 @@ const startServer = async () => {
     method: 'GET',
     path: '/',
     handler: rootHandler
+  });
+
+  server.route({
+    method: '*',
+    path: '/{any*}',
+    handler: function (request, h) {
+
+        return '404 Error! Page Not Found!';
+    }
   });
 
   // console.log('table: ', server.table())

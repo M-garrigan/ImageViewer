@@ -20,6 +20,7 @@ module.exports = (request, h) => h.view(
   'pug',
   {
     pugSample: pugStr,
-    htmlSample: html()
+    htmlSample: html(),
+    linkActive: 'pug'
   }
 );
