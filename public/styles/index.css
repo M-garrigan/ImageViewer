@@ -13,14 +13,17 @@ a {
 :root {
   --main-dark: #1c1c1c;
   --gray: #333;
+  --med-gray: #414141;
+  --lt-gray: #555;
   --alt-gray: #262822;
   --blue: #4666FF;
   --red: #FF4666;
   --green: #66FF46;
   --purple: #8246FF;
-  --light-blue: #46C2FF;
+  --lt-blue: #46C2FF;
   --orange: #FF8246;
   --yellow: #FFDF46;
+  --cream: #fdf5e6;
 }
 
 /* index */
@@ -29,27 +32,41 @@ a {
   min-height: 100vh;
 }
 
-.sec-1 {
-  background-image: linear-gradient(to bottom, var(--main-dark), var(--gray));
-  height: 60vh;
+.sec1 {
+  align-items: center;
+  background-image: url('/svgs/idx-sec1.svg');
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  height: 40vh;
   width: 100vw;
 }
 
-.sec-1-pattern {
-  display: block;
-  height: 100%;
-  width: 100%;
+.sec1-text-group {
+  color: var(--yellow);
+  font-size: 5vw;
+  font-weight: 300;
+  opacity: .8;
+  /* padding: 5% 0 0 10%; */
 }
-#sec-1-triangle {
-  fill: #252525;
-}
-#sec-1-triangle1 {
-  fill: var(--red);
+.sec1-text {
+  padding-left: 10vw;
 }
 
+
 .sec-2 {
-  background-image: linear-gradient(to bottom, var(--gray), #aaa);
-  height: 60vh;
+  background-image: linear-gradient(to bottom, var(--red), #e43654);
+  height: 50vh;
+}
+
+.sec2-text-group {
+  color: var(--cream);
+  font-size: 4vw;
+  font-weight: 300;
+  padding: 5% 0 0 5%;
+}
+.sec2-text {
+  padding-left: 5vw;
 }
 
 .sec-3 {
@@ -57,10 +74,6 @@ a {
   height: 60vh;
 }
 
-.index-title {
-  color: white;
-  font-weight: 700;
-}
 
 /* svg logo */
 #svg-ehp-logo {
@@ -69,11 +82,11 @@ a {
   width: 18vw;
 }
 #svg-ehp-main-color {
-  fill: var(--light-blue);
+  fill: var(--cream);
 }
 
 #svg-ehp-accent-color {
-  fill: var(--blue);
+  fill: var(--red);
 }
 
 /* nav */
@@ -109,11 +122,11 @@ a {
   height: 7vw;
   width: 7vw;
 }
-.hapi {
-  background-image: url('/svgs/hapi-gray-icon.svg');
-  border: thin solid transparent;
+.es-icon:hover {
+  background-image: url('/svgs/es-gray-icon.svg');
+  border: thin solid black;
   border-radius: 1vw;
-  box-shadow: 0 0 1vw var(--yellow);
+  box-shadow: 0 0 1vw goldenrod;
   height: 7vw;
   width: 7vw;
 }
@@ -125,44 +138,48 @@ a {
   height: 7vw;
   width: 7vw;
 }
-.pug-icon {
-  background-image: url('/svgs/pug-outline.svg');
-  border: thin solid transparent;
+
+.hapi-icon-active {
+  background-image: url('/svgs/hapi-icon-nav.svg');
+  border: thin solid black;
   border-radius: 1vw;
-  height: 7vw;
-  width: 7vw;
+  box-shadow: 0 0 1vw var(--yellow);
+  height: 10vw;
+  width: 10vw;
 }
 .hapi-icon {
-  background-image: url('/svgs/hapi-gray-icon.svg');
+  background-image: url('/svgs/hapi-icon-nav.svg');
   border: thin solid transparent;
   border-radius: 1vw;
-  height: 7vw;
-  width: 7vw;
-}
-.es-icon:hover {
-  background-image: url('/svgs/es-gray-icon.svg');
-  border: thin solid black;
-  border-radius: 1vw;
-  box-shadow: 0 0 1vw goldenrod;
-  height: 7vw;
-  width: 7vw;
-}
-.pug-icon:hover {
-  background-image: url('/svgs/pug-outline.svg');
-  border: thin solid black;
-  border-radius: 1vw;
-  box-shadow: 0 0 1vw goldenrod;
-  height: 7vw;
-  width: 7vw;
+  height: 10vw;
+  width: 10vw;
 }
 .hapi-icon:hover {
-  background-image: url('/svgs/hapi-gray-icon.svg');
   border: thin solid black;
-  border-radius: 1vw;
   box-shadow: 0 0 1vw goldenrod;
-  height: 7vw;
-  width: 7vw;
 }
+
+.pug-icon-active {
+  background-image: url('/svgs/pug-icon-nav.svg');
+  border: thin solid transparent;
+  border-radius: 1vw;
+  box-shadow: 0 0 1vw var(--yellow);
+  height: 10vw;
+  width: 10vw;
+}
+.pug-icon {
+  background-image: url('/svgs/pug-icon-nav.svg');
+  border: thin solid transparent;
+  border-radius: 1vw;
+  height: 10vw;
+  width: 10vw;
+}
+
+.pug-icon:hover {
+  border: thin solid black;
+  box-shadow: 0 0 1vw goldenrod;
+}
+
 
 .es-wrapper {
   background: var(--red);

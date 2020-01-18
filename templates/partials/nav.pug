@@ -8,11 +8,14 @@ nav.nav-wrapper
       href='/elasticsearch'
     )
       .es-icon
+    a(href='/hapi')
+      div(
+        class= linkActive === 'hapi' ? 'hapi-icon-active' : 'hapi-icon' 
+      )
+    
     a(
-      class= linkActive === 'hapi' ? 'hapi' : 'hapi-link' 
-      href='/hapi'
+      class= linkActive === 'pug' ? 'pug' : 'pug-link'  
+      href='/pug'
     )
-      .hapi-icon
-    a(class=pug-link href='/pug')
       .pug-icon
   

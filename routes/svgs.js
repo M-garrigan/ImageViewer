@@ -2,7 +2,7 @@
 module.exports = ({
   'ehp.svg': 'ehp.svg',
   'es-gray-icon.svg': 'es-gray-icon.svg',
-  'pug-outline.svg': 'pug-outline.svg',
-  'hapi-gray-icon.svg': 'hapi-gray-icon.svg',
-  'sec-1-pattern.svg': 'sec-1-pattern.svg'
+  'pug-icon-nav.svg': 'pug-icon-nav.svg',
+  'hapi-icon-nav.svg': 'hapi-icon-nav.svg',
+  'idx-sec1.svg': 'idx-sec1.svg'
 });

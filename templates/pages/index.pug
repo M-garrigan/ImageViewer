@@ -5,15 +5,18 @@ html(lang='en')
   body
     include ../partials/nav.pug
     .index-wrapper
-      section.sec-1
-        include ../../public/svgs/sec-1-pattern.svg
-        h1.index-title EHP is a JS technology stack for developing web applications
+      section.sec1
+        .sec1-text-group
+          p EHP is a JS tech stack 
+          p.sec1-text for web applications
+        
       section.sec-2
-        h3 Features
-          ol
-            li Server Side Rendered
-            li Highly Scalable
-            li Immutable State Machine
+        .sec2-text-group
+          p Features
+          p.sec2-text Server Side Rendered 
+          p.sec2-text Highly Scalable
+          p.sec2-text Immutable State Machine
+          
       section.sec-3
         h3 Core Components
           ol

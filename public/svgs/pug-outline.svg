@@ -12,45 +12,8 @@
    
    viewBox="0 0 79.374998 79.375002"
    version="1.1"
-   id="svg8"
-   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   sodipodi:docname="pug-outline.svg">
-  <defs
-     id="defs2" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="102.86915"
-     inkscape:cy="159.58818"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     units="px"
-     inkscape:window-width="1402"
-     inkscape:window-height="762"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:snap-nodes="false"
-     showguides="true"
-     inkscape:guide-bbox="true" />
-  <metadata
-     id="metadata5">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
+  >
+  
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
@@ -162,28 +125,5 @@
        style="fill:#00ffff;fill-opacity:1;stroke-width:0.26458332"
        inkscape:connector-curvature="0" />
   </g>
-  <style
-     id="style1581"
-     type="text/css">
-	.st0{fill:#C1272D;}
-	.st1{fill:#EFCCA3;}
-	.st2{fill:#ED1C24;}
-	.st3{fill:#CCAC8D;}
-	.st4{fill:#FFFFFF;}
-	.st5{fill:#FF931E;}
-	.st6{fill:#FFB81E;}
-	.st7{fill:#56332B;}
-	.st8{fill:#442823;}
-	.st9{fill:#7F4A41;}
-	.st10{fill:#331712;}
-	.st11{fill:#FFCC66;}
-	.st12{fill:#CCCCCC;}
-	.st13{fill:#B3B3B3;}
-	.st14{fill:#989898;}
-	.st15{fill:#323232;}
-	.st16{fill:#1E1E1E;}
-	.st17{fill:#4C4C4C;}
-	.st18{fill:#E6E6E6;}
-	.st19{fill:#606060;}
-</style>
+  
 </svg>
