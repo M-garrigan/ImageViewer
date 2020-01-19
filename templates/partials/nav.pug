@@ -1,21 +1,14 @@
 
 nav.nav-wrapper
   a(class=home-link href='/')
-    include ../../public/svgs/ehp.svg
+    include ../../public/svgs/ehp-logo.svg
   .button-group
-    a(
-      class= linkActive === 'es' ? 'es': 'es-link' 
-      href='/elasticsearch'
-    )
-      .es-icon
+    a(href='/elasticsearch')
+      div(class= linkActive === 'es' ? 'es-icon-active' : 'es-icon' )
+      
     a(href='/hapi')
-      div(
-        class= linkActive === 'hapi' ? 'hapi-icon-active' : 'hapi-icon' 
-      )
-    
-    a(
-      class= linkActive === 'pug' ? 'pug' : 'pug-link'  
-      href='/pug'
-    )
-      .pug-icon
+      div(class= linkActive === 'hapi' ? 'hapi-icon-active' : 'hapi-icon' )
+
+    a(href='/pug')
+      div(class= linkActive === 'pug' ? 'pug-icon-active' : 'pug-icon' )
   

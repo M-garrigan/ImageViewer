@@ -38,7 +38,7 @@ a {
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  height: 40vh;
+  height: 50vh;
   width: 100vw;
 }
 
@@ -47,7 +47,6 @@ a {
   font-size: 5vw;
   font-weight: 300;
   opacity: .8;
-  /* padding: 5% 0 0 10%; */
 }
 .sec1-text {
   padding-left: 10vw;
@@ -57,13 +56,24 @@ a {
 .sec-2 {
   background-image: linear-gradient(to bottom, var(--red), #e43654);
   height: 50vh;
+  margin-top: -2px;
 }
 
 .sec2-text-group {
-  color: var(--cream);
-  font-size: 4vw;
+  color: var(--alt-gray);
+  font-size: 6vw;
   font-weight: 300;
-  padding: 5% 0 0 5%;
+  height: 100%;
+  margin: 0 auto;
+  width: 90%;
+}
+.sec2-features {
+  align-items: center;
+  color: var(--gray);
+  display: flex;
+  font-size: 3.5vw;
+  height: 80%;
+  justify-content: space-evenly;
 }
 .sec2-text {
   padding-left: 5vw;
@@ -75,20 +85,6 @@ a {
 }
 
 
-/* svg logo */
-#svg-ehp-logo {
-  display: block;
-  height: 9vw;
-  width: 18vw;
-}
-#svg-ehp-main-color {
-  fill: var(--cream);
-}
-
-#svg-ehp-accent-color {
-  fill: var(--red);
-}
-
 /* nav */
 .nav-wrapper {
   align-items: center;
@@ -98,6 +94,19 @@ a {
   justify-content: space-around;
 }
 
+#svg-ehp-logo {
+  display: block;
+  height: 10vw;
+  width: 20vw;
+}
+.ehp-logo-red {
+  fill: var(--red);
+}
+.ehp-logo-white {
+  fill: var(--lt-blue);
+  stroke: var(--cream);
+}
+
 
 .button-group {
   align-items: center;
@@ -105,38 +114,26 @@ a {
   justify-content: space-evenly;
   width: 50%;
 }
-.nav-button {
-  background: yellowgreen;
-  border: none;
-  border-radius: 1vw;
-  color: brown;
-  font-size: 2.2vw;
-  
-}
 
-.es {
-  background-image: url('/svgs/es-gray-icon.svg');
-  border: thin solid transparent;
-  border-radius: 1vw;
-  box-shadow: 0 0 1vw var(--yellow);
-  height: 7vw;
-  width: 7vw;
-}
-.es-icon:hover {
-  background-image: url('/svgs/es-gray-icon.svg');
+.es-icon-active {
+  background-image: url('/svgs/es-icon-nav.svg');
   border: thin solid black;
   border-radius: 1vw;
-  box-shadow: 0 0 1vw goldenrod;
-  height: 7vw;
-  width: 7vw;
+  box-shadow: 0 0 1vw var(--yellow);
+  height: 10vw;
+  width: 10vw;
 }
 
 .es-icon {
-  background-image: url('/svgs/es-gray-icon.svg');
+  background-image: url('/svgs/es-icon-nav.svg');
   border: thin solid transparent;
   border-radius: 1vw;
-  height: 7vw;
-  width: 7vw;
+  height: 10vw;
+  width: 10vw;
+}
+.es-icon:hover {
+  border: thin solid black;
+  box-shadow: 0 0 1vw goldenrod;
 }
 
 .hapi-icon-active {
