@@ -24,6 +24,7 @@ a {
   --orange: #FF8246;
   --yellow: #FFDF46;
   --cream: #fdf5e6;
+  --pug: #A86454;
 }
 
 /* index */
@@ -37,24 +38,28 @@ a {
   background-image: url('/svgs/idx-sec1.svg');
   background-repeat: no-repeat;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   height: 50vh;
   width: 100vw;
 }
 
 .sec1-text-group {
-  color: var(--yellow);
-  font-size: 5vw;
+  color: var(--cream);
+  font-size: 6vw;
   font-weight: 300;
   opacity: .8;
 }
 .sec1-text {
   padding-left: 10vw;
 }
+.sec1-spacer {
+  height: 15vh;
+}
 
 
-.sec-2 {
-  background-image: linear-gradient(to bottom, var(--red), #e43654);
+.sec2 {
+  background: var(--red);
   height: 50vh;
   margin-top: -2px;
 }
@@ -69,114 +74,52 @@ a {
 }
 .sec2-features {
   align-items: center;
-  color: var(--gray);
   display: flex;
-  font-size: 3.5vw;
+  font-size: 4vw;
   height: 80%;
   justify-content: space-evenly;
 }
-.sec2-text {
-  padding-left: 5vw;
-}
-
-.sec-3 {
-  background-image: linear-gradient(to bottom, #aaa, var(--purple));
-  height: 60vh;
-}
-
-
-/* nav */
-.nav-wrapper {
+.sec2-feature {
   align-items: center;
-  background: var(--main-dark);
+  background: rgb(248, 139, 157);
+  border-radius: 1vw;
   display: flex;
-  height: 15vw;
-  justify-content: space-around;
-}
-
-#svg-ehp-logo {
-  display: block;
-  height: 10vw;
-  width: 20vw;
-}
-.ehp-logo-red {
-  fill: var(--red);
-}
-.ehp-logo-white {
-  fill: var(--lt-blue);
-  stroke: var(--cream);
-}
-
-
-.button-group {
-  align-items: center;
-  display: flex;
+  flex-direction: column;
+  height: 80%;
   justify-content: space-evenly;
-  width: 50%;
+  width: 30%;
+}
+.sec2-text {
+  text-align: center;
+}
+.sec2-text-lg {
+  font-size: 3.5vw;
+  text-align: center;
+}
+#server-svg {
+  height: 50%;
+  width: 60%;
+}
+#expand-svg {
+  height: 50%;
+  width: 60%;
+}
+#links-svg {
+  height: 50%;
+  width: 60%;
 }
 
-.es-icon-active {
-  background-image: url('/svgs/es-icon-nav.svg');
-  border: thin solid black;
-  border-radius: 1vw;
-  box-shadow: 0 0 1vw var(--yellow);
-  height: 10vw;
-  width: 10vw;
+.sec3 {
+  align-items: center;
+  background-image: url('/svgs/idx-sec3.svg');
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  margin-top: -2px;
+  width: 100vw;
 }
-
-.es-icon {
-  background-image: url('/svgs/es-icon-nav.svg');
-  border: thin solid transparent;
-  border-radius: 1vw;
-  height: 10vw;
-  width: 10vw;
-}
-.es-icon:hover {
-  border: thin solid black;
-  box-shadow: 0 0 1vw goldenrod;
-}
-
-.hapi-icon-active {
-  background-image: url('/svgs/hapi-icon-nav.svg');
-  border: thin solid black;
-  border-radius: 1vw;
-  box-shadow: 0 0 1vw var(--yellow);
-  height: 10vw;
-  width: 10vw;
-}
-.hapi-icon {
-  background-image: url('/svgs/hapi-icon-nav.svg');
-  border: thin solid transparent;
-  border-radius: 1vw;
-  height: 10vw;
-  width: 10vw;
-}
-.hapi-icon:hover {
-  border: thin solid black;
-  box-shadow: 0 0 1vw goldenrod;
-}
-
-.pug-icon-active {
-  background-image: url('/svgs/pug-icon-nav.svg');
-  border: thin solid transparent;
-  border-radius: 1vw;
-  box-shadow: 0 0 1vw var(--yellow);
-  height: 10vw;
-  width: 10vw;
-}
-.pug-icon {
-  background-image: url('/svgs/pug-icon-nav.svg');
-  border: thin solid transparent;
-  border-radius: 1vw;
-  height: 10vw;
-  width: 10vw;
-}
-
-.pug-icon:hover {
-  border: thin solid black;
-  box-shadow: 0 0 1vw goldenrod;
-}
-
 
 .es-wrapper {
   background: var(--red);

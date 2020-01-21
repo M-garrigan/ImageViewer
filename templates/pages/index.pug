@@ -5,27 +5,36 @@ html(lang='en')
   body
     include ../partials/nav.pug
     .index-wrapper
+
       section.sec1
         .sec1-text-group
           p EHP is a JS tech stack 
           p.sec1-text for web applications
-      section.sec-2
+        .sec1-spacer
+
+      section.sec2
         .sec2-text-group
           p Features
           .sec2-features
             .sec2-feature
-              .sec2-server-svg
+              include ../../public/svgs/server.svg
               p.sec2-text Server Side Rendering 
-            p.sec2-text Highly Scalable
-            p.sec2-text Immutable State Machine
+            .sec2-feature
+              include ../../public/svgs/expand.svg
+              p.sec2-text Highly Scalable
+            .sec2-feature
+              include ../../public/svgs/links.svg
+              p.sec2-text-lg Immutable State Machine
           
-      section.sec-3
+      section.sec3
         h3 Core Components
           ol
             li Elasticsearch
             li Hapi
             li Pug JS
             li Redux
+
+    include ../partials/footer.pug
 
     
     

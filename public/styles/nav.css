@@ -1,0 +1,108 @@
+
+
+/* nav */
+.nav-wrapper {
+  align-items: center;
+  background: var(--main-dark);
+  display: flex;
+  height: 15vw;
+  justify-content: space-around;
+}
+
+#svg-ehp-logo {
+  display: block;
+  height: 10vw;
+  width: 20vw;
+}
+.ehp-logo-red {
+  fill: var(--red);
+}
+.ehp-logo-white {
+  fill: var(--lt-blue);
+  stroke: var(--cream);
+}
+
+
+.button-group {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.es-icon-active {
+  background-image: url('/svgs/es-icon-nav.svg');
+  border: thin solid black;
+  border-radius: 1vw;
+  box-shadow: 0 0 1vw var(--yellow);
+  height: 10vw;
+  width: 10vw;
+}
+
+.es-icon {
+  background-image: url('/svgs/es-icon-nav.svg');
+  border: thin solid transparent;
+  border-radius: 1vw;
+  height: 10vw;
+  width: 10vw;
+}
+.es-icon:hover {
+  border: thin solid black;
+  box-shadow: 0 0 1vw goldenrod;
+}
+
+.hapi-icon-active {
+  background-image: url('/svgs/hapi-icon-nav.svg');
+  border: thin solid black;
+  border-radius: 1vw;
+  box-shadow: 0 0 1vw var(--yellow);
+  height: 10vw;
+  width: 10vw;
+}
+.hapi-icon {
+  background-image: url('/svgs/hapi-icon-nav.svg');
+  border: thin solid transparent;
+  border-radius: 1vw;
+  height: 10vw;
+  width: 10vw;
+}
+.hapi-icon:hover {
+  border: thin solid black;
+  box-shadow: 0 0 1vw goldenrod;
+}
+
+.pug-icon-active {
+  background-image: url('/svgs/pug-icon-nav.svg');
+  border: thin solid transparent;
+  border-radius: 1vw;
+  box-shadow: 0 0 1vw var(--yellow);
+  height: 10vw;
+  width: 10vw;
+}
+.pug-icon {
+  background-image: url('/svgs/pug-icon-nav.svg');
+  border: thin solid transparent;
+  border-radius: 1vw;
+  height: 10vw;
+  width: 10vw;
+}
+
+.pug-icon:hover {
+  border: thin solid black;
+  box-shadow: 0 0 1vw goldenrod;
+}
+
+/* footer */
+footer {
+  align-items: center;
+  background: var(--main-dark);
+  border-top: dotted 1vw var(--lt-blue);
+  display: flex;
+  height: 15vw;
+  justify-content: center;
+}
+.footer-text {
+  color: var(--cream);
+  font-size: 3vw;
+}
+

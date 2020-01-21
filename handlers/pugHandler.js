@@ -20,7 +20,7 @@ module.exports = (request, h) => h.view(
   'pug',
   {
     pugSample: pugStr,
-    htmlSample: html(),
+    htmlSample: html({title: 'Example', message: 'A new rendered message', redditPost: 'Roast Me'}),
     linkActive: 'pug'
   }
 );

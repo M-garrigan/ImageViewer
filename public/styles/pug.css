@@ -1,4 +1,10 @@
 
 .pug-wrapper {
-  
+  background: var(--pug);
+  min-height: 100vh;
+}
+
+.intro-pug-html {
+  align-items: center;
+  display: flex;
 }
