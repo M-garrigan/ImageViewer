@@ -1,0 +1,65 @@
+
+doctype html
+html(lang='en')
+  include ../partials/head.pug
+  body
+    include ../partials/nav.pug
+    .P-api-wrapper
+      .P-api-banner
+        include ../../public/svgs/pug-logo-color.svg
+        p Pug API
+
+      .P-api-toc
+        p Public API Methods
+        .P-api-button-group
+          .P-api-button-group-render
+            a(href='#renderAPI') render
+            a(href='#renderFileAPI') renderFile
+
+          .P-api-button-group-opts
+            a(href='#optionsAPI') options
+            a(href='#localsAPI') locals
+          .P-api-button-group-compile
+            a(href='#compileAPI') compile
+            a(href='#compileClientAPI') compileClient
+            a(href='#compileClientWithAPI') compileClientWithDependeciesTracked
+            a(href='#compileFileAPI') compileFile
+            a(href='#compileFileClientAPI') compileFileClient
+
+      .P-api-code 
+        p What the pug variable returns when invoked.
+        pre.line-numbers
+          code.language-js.
+            const pug = require('pug');
+
+            console.log(pug);
+
+            // our pug variable would expose this object 
+            {
+              name: 'Pug',
+              runtime: {
+                merge: [Function: pug_merge],
+                classes: [Function: pug_classes],
+                style: [Function: pug_style],
+                attr: [Function: pug_attr],
+                attrs: [Function: pug_attrs],
+                escape: [Function: pug_escape],
+                rethrow: [Function: pug_rethrow]
+              },
+              cache: {},
+              filters: {},
+              compile: [Function],
+              compileClient: [Function],
+              compileClientWithDependenciesTracked: [Function],
+              compileFile: [Function],
+              compileFileClient: [Function],
+              render: [Function],
+              renderFile: [Function],
+              __express: [Function]
+            }
+
+      #renderAPI.P-api-fn-banner render(str, options)
+
+  script(src='/js/prism.js')
+  script(src='/js/prism-line-numbers.js')
+  script(src='/js/prism-pug.js')

@@ -4,6 +4,59 @@
   min-height: 100vh;
 }
 
+.sec1-pug {
+  align-items: center;
+  background-image: url('/svgs/pug-sec1-background.svg');
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.sec1-top {
+  align-items: flex-start;
+  display: flex;
+  height: 30%;
+  justify-content: flex-end;
+  width: 90%;
+}
+.sec1-links-group {
+  background: rgba(253, 245, 230, 0.3);
+  border: dotted .5vw var(--orange);
+  padding: 1vw;
+}
+.sec1-link {
+  color: var(--main-dark);
+  font-size: 3vw;
+}
+.sec1-middle {
+  align-items: center;
+  background: rgba(253, 245, 230, 0.8);
+  display: flex;
+  height: 30%;
+  justify-content: space-evenly;
+  width: 90%;
+}
+#pug-logo-color {
+  height: 30vw;
+  width: 30vw;
+}
+.sec1-branding-text {
+  
+  color: var(--main-dark);
+  font-size: 16vw;
+}
+.sec1-bottom {
+  align-items: center;
+  display: flex;
+  height: 30%;
+  justify-content: center;
+  width: 90%;
+}
+.sec1-summary {
+  font-size: 3vw;
+}
 .intro-pug-html {
   align-items: center;
   display: flex;

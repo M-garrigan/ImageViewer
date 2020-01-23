@@ -1,0 +1,71 @@
+
+.P-api-wrapper {
+  background: var(--pug);
+  min-height: 100vh;
+  padding-top: 10vw;
+  width: 100vw;
+}
+
+.P-api-banner {
+  align-items: center;
+  background: var(--cream);
+  display: flex;
+  height: 15vw;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 90%;
+}
+.P-api-banner > p {
+  font-size: 12vw;
+}
+
+/* Table of contents */
+.P-api-toc {
+  background: rgba(253, 245, 230, 0.4);
+  border-radius: 2vw;
+  color: var(--main-dark);
+  margin: 8vw auto;
+  width: 80%;
+}
+.P-api-toc > p {
+  font-size: 3.5vw;
+  text-align: center;
+}
+.P-api-button-group {
+  display: flex;
+  font-size: 2vw;
+}
+.P-api-button-group-render > a {
+  background: var(--lt-blue);
+  border-radius: 1vw;
+  color: var(--main-dark);
+  display: inline-block;
+  margin: .5vw 0;
+  padding: .5vw;
+  text-align: center;
+}
+.P-api-button-group-opts > a {
+  background: var(--green);
+  border-radius: 1vw;
+  color: var(--main-dark);
+  display: inline-block;
+  margin: .5vw;
+  padding: .5vw;
+  text-align: center;
+}
+.P-api-button-group-compile > a {
+  background: var(--orange);
+  border-radius: 1vw;
+  color: var(--main-dark);
+  display: inline-block;
+  margin: .5vw 0;
+  padding: .5vw;
+  text-align: center;
+}
+
+
+/* Code Example */
+.P-api-code {
+  margin: 0 auto;
+  width: 75%;
+}

@@ -9,6 +9,8 @@ const pug = require('pug');
 // static routes
 const svgObj = require('./routes/svgs.js');
 const cssObj = require('./routes/css.js');
+const jsObj = require('./routes/js.js');
+const pugObj = require('./routes/pug.js')
 
 // handlers
 const esHandler = require('./handlers/esHandler.js');
@@ -61,22 +63,30 @@ const startServer = async () => {
     }
   });
 
+  // js library files
   server.route({
     method: 'GET',
-    path: '/prism.js',
-    handler: (request, h) => h.file('node_modules/prismjs/prism.js')
+    path: '/js/{file}',
+    handler: (request, h) => {
+      let file = request.params.file;
+
+      if (jsObj[file]) {
+        return h.file(jsObj[file]);
+      }
+    }
   });
 
+  // pug sub routes
   server.route({
     method: 'GET',
-    path: '/prism-line-numbers.js',
-    handler: (request, h) => h.file('node_modules/prismjs/plugins/line-numbers/prism-line-numbers.min.js')
-  });
+    path: '/pug/{sub}',
+    handler: (request, h) => {
+      let rt = request.params.sub;
 
-  server.route({
-    method: 'GET',
-    path: '/prism-pug.js',
-    handler: (request, h) => h.file('node_modules/prismjs/components/prism-pug.js')
+      if (pugObj[rt]) {
+        return h.view(pugObj[rt]);
+      }
+    }
   });
 
 
