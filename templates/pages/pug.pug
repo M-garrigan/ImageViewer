@@ -25,47 +25,26 @@ html(lang='en')
           
           
         .sec1-bottom
-          .sec1-summary-group 
-            p.sec1-summary Pug is a templating language that can be converted to regular HTML. Pug is a very limited subset of Javascript with its own syntax, own keywords, own conventions and its own compiler. Pug JS is known for great performance and clean - simple - terse syntax.
-            p A template engine implemented in JavaScript
+          p.pug-bullet-head ABOUT.
 
       section.sec2-pug
-       p An example of Pug file and the HTML it generates
+        .pug-bullet-group
+          p.pug-bullet Pug is a templating language that compiles to a HTML string.
+          p.pug-bullet -  ---  -
+          p.pug-bullet Written in Javascript. 
+          p.pug-bullet -  ---  -
+          p.pug-bullet Pug can be used as a module or as a CLI tool.
+          p.pug-bullet -  ---  -
+          p.pug-bullet Pug JS is known for great performance and clean, simple, terse syntax.
 
-    //-   .intro-pug-html 
-    //-     pre.line-numbers
-    //-       code(class=['pug', 'language-pug']) #{pugSample}
-    //-     pre.line-numbers
-    //-       code(class=['html', 'language-html']) #{htmlSample}
+        .index-pug-example 
+          pre.line-numbers
+            code.language-pug #{pugSample}
+          pre.line-numbers
+            code(class=['html', 'language-html']) #{htmlSample}
 
   script(src='/js/prism.js')
   script(src='/js/prism-line-numbers.js')
   script(src='/js/prism-pug.js')
 
-
-//-       .pug-code. 
-//-         `pug:  {
-//-   name: 'Pug',
-//-   runtime: {
-//-     merge: [Function: pug_merge],
-//-     classes: [Function: pug_classes],
-//-     style: [Function: pug_style],
-//-     attr: [Function: pug_attr],
-//-     attrs: [Function: pug_attrs],
-//-     escape: [Function: pug_escape],
-//-     rethrow: [Function: pug_rethrow]
-//-   },
-//-   cache: {},
-//-   filters: {},
-//-   compile: [Function],
-//-   compileClientWithDependenciesTracked: [Function],
-//-   compileClient: [Function],
-//-   compileFile: [Function],
-//-   render: [Function],
-//-   renderFile: [Function],
-//-   compileFileClient: [Function],
-//-   __express: [Function]
-//- }`
-
-  
-    
+  include ../partials/footer.pug

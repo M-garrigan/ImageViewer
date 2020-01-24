@@ -115,12 +115,32 @@ a {
   background-image: url('/svgs/idx-sec3.svg');
   background-repeat: no-repeat;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 80vh;
   margin-top: -2px;
   width: 100vw;
 }
+.sec3-core-group {
+  align-items: center;
+  /* border: thin solid gray; */
+  color: var(--cream);
+  display: flex;
+  flex-direction: column;
+  height: 75%;
+  justify-content: space-evenly;
+  width: 50vw;
+}
+.sec3-core-group > h3 {
+  font-size: 5vw;
+}
+.sec3-core-group > p {
+  font-size: 5vw;
+}
+#svg-puzzle {
+  height: 40vw;
+  width: 40vw;
+}
+
 
 .es-wrapper {
   background: var(--red);

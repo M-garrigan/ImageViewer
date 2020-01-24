@@ -66,6 +66,29 @@
 
 /* Code Example */
 .P-api-code {
+
   margin: 0 auto;
   width: 75%;
+}
+
+/* Fn definitions */
+.P-api-fn-def {
+  /* background: var(--cream); */
+  border-radius: 1vw;
+  display: flex;
+  flex-direction: column;
+  margin: 2vw auto;
+  width: 90%;
+}
+.P-api-fn-banner {
+  background: rgba(165, 42, 42, 0.5);
+  color: var(--cream);
+  text-align: center;
+  font-size: 5vw;
+  height: 8vw;
+}
+
+.P-api-fn-body > p {
+  background: rgba(253, 245, 230, 0.6);
+  font-size: 3vw;
 }

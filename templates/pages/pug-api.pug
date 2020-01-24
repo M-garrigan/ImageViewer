@@ -58,7 +58,22 @@ html(lang='en')
               __express: [Function]
             }
 
-      #renderAPI.P-api-fn-banner render(str, options)
+      #renderAPI.P-api-fn-def
+        .P-api-fn-banner render(str, options, fn)
+        .P-api-fn-body
+          p Summary
+          p Params
+          p Return
+          p Examples
+
+      #renderFileAPI.P-api-fn-def
+        .P-api-fn-banner renderFile(str, options, fn)
+        .P-api-fn-body
+          p Summary
+          p Params
+          p Return
+          p Examples
+
 
   script(src='/js/prism.js')
   script(src='/js/prism-line-numbers.js')
