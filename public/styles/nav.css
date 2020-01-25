@@ -92,6 +92,27 @@
   box-shadow: 0 0 1vw goldenrod;
 }
 
+.redux-icon-active {
+  background-image: url('/svgs/redux-icon-nav.svg');
+  border: thin solid transparent;
+  border-radius: 1vw;
+  box-shadow: 0 0 1vw var(--yellow);
+  height: 10vw;
+  width: 10vw;
+}
+.redux-icon {
+  background-image: url('/svgs/redux-icon-nav.svg');
+  border: thin solid transparent;
+  border-radius: 1vw;
+  height: 10vw;
+  width: 10vw;
+}
+
+.redux-icon:hover {
+  border: thin solid black;
+  box-shadow: 0 0 1vw goldenrod;
+}
+
 /* footer */
 footer {
   align-items: center;

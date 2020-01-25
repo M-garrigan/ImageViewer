@@ -10,14 +10,17 @@ const pug = require('pug');
 const svgObj = require('./routes/svgs.js');
 const cssObj = require('./routes/css.js');
 const jsObj = require('./routes/js.js');
-const pugObj = require('./routes/pug.js')
+const pugObj = require('./routes/pug.js');
+
+// api data object
+const apiData = require('./apiData.js');
 
 // handlers
 const esHandler = require('./handlers/esHandler.js');
 const hapiHandler = require('./handlers/hapiHandler.js');
 const pugHandler = require('./handlers/pugHandler.js');
+const reduxHandler = require('./handlers/reduxHandler.js');
 const rootHandler = require('./handlers/rootHandler.js');
-const newsHandler = require('./handlers/newsHandler.js');
 
 const { initES, createES } = require('./es.js');
 
@@ -83,7 +86,9 @@ const startServer = async () => {
     handler: (request, h) => {
       let rt = request.params.sub;
 
-      if (pugObj[rt]) {
+      if (rt === 'api') {
+        return h.view('pug-api', {api: apiData});
+      } else if (pugObj[rt]) {
         return h.view(pugObj[rt]);
       }
     }
@@ -106,6 +111,12 @@ const startServer = async () => {
     method: 'GET',
     path: '/pug',
     handler: pugHandler
+  });
+
+  server.route({
+    method: 'GET',
+    path: '/redux',
+    handler: reduxHandler
   });
 
   server.route({

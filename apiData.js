@@ -1,0 +1,52 @@
+
+module.exports = ({
+  render: {
+    id: 'renderAPI',
+    def: 'render( str, options, cb )',
+    g2: 'Summary',
+    g3: 'Render fully interprates the source code in string format',
+    g4: 'Params',
+    g5: 'Type',
+    g6: 'Optional',
+    g7: 'Description',
+    g8: 'str',
+    g9: 'string',
+    g10: 'required',
+    g11: '...',
+    g12: 'options',
+    g13: 'object',
+    g14: 'optional',
+    g15: '...',
+    g16: 'cb',
+    g17: 'function',
+    g18: 'optional',
+    g19: '...',
+    g20: 'Return',
+    g21: 'string -- A HTML string'
+  },
+
+  renderFile: {
+    id: 'renderFileAPI',
+    def: 'renderFile( str, options, cb )',
+    g2: 'Summary',
+    g3: 'Render fully interprates the source code from the pug files path string',
+    g4: 'Params',
+    g5: 'Type',
+    g6: 'Optional',
+    g7: 'Description',
+    g8: 'str',
+    g9: 'string',
+    g10: 'required',
+    g11: '...',
+    g12: 'options',
+    g13: 'object',
+    g14: 'optional',
+    g15: '...',
+    g16: 'cb',
+    g17: 'function',
+    g18: 'optional',
+    g19: '...',
+    g20: 'Return',
+    g21: 'string -- A HTML string'
+  }
+});

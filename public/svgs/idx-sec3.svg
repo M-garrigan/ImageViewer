@@ -8,7 +8,7 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0beta2 (2b71d25, 2019-12-03)"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="idx-sec3.svg"
    preserveAspectRatio="none"
    viewBox="0 0 26.458335 26.458334"
@@ -18,15 +18,15 @@
      inkscape:snap-global="true"
      inkscape:current-layer="svg16"
      inkscape:window-maximized="0"
-     inkscape:window-y="0"
-     inkscape:window-x="0"
-     inkscape:cy="9.7837889"
-     inkscape:cx="20.563008"
-     inkscape:zoom="82.242518"
+     inkscape:window-y="135"
+     inkscape:window-x="158"
+     inkscape:cy="13.67472"
+     inkscape:cx="15.74798"
+     inkscape:zoom="20.56063"
      showgrid="false"
      id="namedview2653"
-     inkscape:window-height="852"
-     inkscape:window-width="1250"
+     inkscape:window-height="797"
+     inkscape:window-width="1200"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
      guidetolerance="10"
@@ -78,8 +78,9 @@
      inkscape:connector-curvature="0" />
   <path
      id="path20"
-     d="M -0.065427,26.458352 9.730874,1.967857 -0.015301,0.018621 Z"
-     style="fill:#414141;fill-opacity:1;stroke-width:0.416809" />
+     d="M 0,26.458352 9.796301,1.967857 0.050126,0.018621 Z"
+     style="fill:#414141;fill-opacity:1;stroke-width:0.41680899"
+     inkscape:connector-curvature="0" />
   <path
      sodipodi:nodetypes="cccc"
      id="path26"

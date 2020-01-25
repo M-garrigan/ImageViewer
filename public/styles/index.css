@@ -1,5 +1,6 @@
 /* globals */
 * {
+  /* box-sizing: border-box; */
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
@@ -48,8 +49,8 @@ a {
 .sec1-text-group {
   color: var(--cream);
   font-size: 6vw;
-  font-weight: 300;
   opacity: .8;
+  text-shadow: 0 0 0.5vw var(--blue);
 }
 .sec1-text {
   padding-left: 10vw;
@@ -66,12 +67,14 @@ a {
 }
 
 .sec2-text-group {
-  color: var(--alt-gray);
+  color: var(--cream);
   font-size: 6vw;
-  font-weight: 300;
   height: 100%;
   margin: 0 auto;
   width: 90%;
+}
+.sec2-text-group > p {
+  text-shadow: 0 0 1.5vw var(--main-dark);
 }
 .sec2-features {
   align-items: center;
@@ -82,7 +85,7 @@ a {
 }
 .sec2-feature {
   align-items: center;
-  background: rgb(248, 139, 157);
+  background: rgb(255, 127, 148);
   border-radius: 1vw;
   display: flex;
   flex-direction: column;
@@ -91,9 +94,11 @@ a {
   width: 30%;
 }
 .sec2-text {
+  color: var(--main-dark);
   text-align: center;
 }
 .sec2-text-lg {
+  color: var(--main-dark);
   font-size: 3.5vw;
   text-align: center;
 }
@@ -111,7 +116,7 @@ a {
 }
 
 .sec3 {
-  align-items: center;
+  align-items: flex-end;
   background-image: url('/svgs/idx-sec3.svg');
   background-repeat: no-repeat;
   display: flex;
@@ -122,23 +127,26 @@ a {
 }
 .sec3-core-group {
   align-items: center;
-  /* border: thin solid gray; */
   color: var(--cream);
   display: flex;
   flex-direction: column;
-  height: 75%;
+  height: 85%;
   justify-content: space-evenly;
-  width: 50vw;
+  width: 60vw;
 }
 .sec3-core-group > h3 {
-  font-size: 5vw;
+  font-size: 6vw;
+  text-shadow: 0 0 0.5vw var(--yellow);
 }
-.sec3-core-group > p {
-  font-size: 5vw;
+.sec3-core-group > a > p {
+  color: var(--cream);
+  font-size: 6vw;
+  text-shadow: 0 0 0.5vw var(--lt-blue);
 }
 #svg-puzzle {
-  height: 40vw;
-  width: 40vw;
+  height: 30vw;
+  margin-bottom: 3vw;
+  width: 30vw;
 }
 
 

@@ -2,6 +2,7 @@
 .pug-wrapper {
   background: var(--pug);
   min-height: 100vh;
+  padding-bottom: 6vw;
 }
 
 .sec1-pug {
@@ -50,53 +51,46 @@
   width: 30vw;
 }
 .sec1-branding-text {
-  
   color: var(--main-dark);
   font-size: 16vw;
 }
 .sec1-bottom {
-  align-items: center;
-  background: rgba(255, 250, 200, 0.5);
-  border-left: thin double var(--red);
-  border-right: thin double var(--red);
-  border-top: thin double var(--red);
+  align-items: flex-end;
+  color: var(--main-dark);
   display: flex;
+  font-size: 7vw;
   height: 20%;
-  justify-content: center;
-  width: 80%;
-}
-.pug-bullet-group {
-  background: rgba(255, 250, 200, 0.5);
-  border-bottom: thin double var(--red);
-  border-left: thin double var(--red);
-  border-right: thin double var(--red);
-  margin: 0 auto;
-  width: 80%;
-}
-.pug-bullet-head {
-  color: var(--main-dark);
-  font-size: 6vw;
-  text-align: center;
-  
-}
-.pug-bullet {
-  color: var(--main-dark);
-  font-size: 3.5vw;
-  margin: 0vw auto;
-  text-align: center;
-  width: 80%;
+  justify-content: space-between;
+  width: 85%;
 }
 
 .sec2-pug {
-  height: 100vh;
+  
 }
 
 .index-pug-example {
   display: flex;
   justify-content: space-evenly;
+  margin: 1vw auto 4vw;
 }
 
 .index-pug-example > pre {
   font-size: 2vw !important;
   width: 35vw;
+}
+
+.pug-about {
+  background: rgba(255, 250, 250, 0.7);
+  box-shadow: 0px 0px 10px var(--main-dark) inset;
+  margin: 0 auto;
+  padding: 6vw 2vw;
+  width: 90%;
+}
+
+.pug-bullet {
+  color: var(--main-dark);
+  font-size: 4vw;
+  margin: 2.5vw auto;
+  text-align: left;
+  width: 90%;
 }

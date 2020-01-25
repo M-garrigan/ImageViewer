@@ -25,23 +25,26 @@ html(lang='en')
           
           
         .sec1-bottom
-          p.pug-bullet-head ABOUT.
+          p.pug-fileName index.pug
+          p.pug-fileName index.html
+          
 
       section.sec2-pug
-        .pug-bullet-group
-          p.pug-bullet Pug is a templating language that compiles to a HTML string.
-          p.pug-bullet -  ---  -
-          p.pug-bullet Written in Javascript. 
-          p.pug-bullet -  ---  -
-          p.pug-bullet Pug can be used as a module or as a CLI tool.
-          p.pug-bullet -  ---  -
-          p.pug-bullet Pug JS is known for great performance and clean, simple, terse syntax.
-
         .index-pug-example 
           pre.line-numbers
             code.language-pug #{pugSample}
           pre.line-numbers
-            code(class=['html', 'language-html']) #{htmlSample}
+            code.language-html #{htmlSample}
+
+        .pug-about
+          p.pug-bullet Pug is a templating language that compiles to a HTML string.
+          
+          p.pug-bullet Pug is written in Javascript. 
+          
+          p.pug-bullet Pug can be used as a module or as a CLI tool.
+          
+          p.pug-bullet Pug is known for clean|simple|terse syntax.
+
 
   script(src='/js/prism.js')
   script(src='/js/prism-line-numbers.js')
