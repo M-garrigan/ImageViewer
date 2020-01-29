@@ -3,34 +3,14 @@ doctype html
 html(lang='en')
   include ../partials/head.pug
   body
-    include ../partials/nav.pug
     .pug-wrapper
-      section.sec1-pug
-        .sec1-top
-          .sec1-links-group
-            a(href='/pug/examples')
-              p.sec1-link Examples
-            a(href='/pug/language')
-              p.sec1-link Language
-            a(href='/pug/api')
-              p.sec1-link API
-            a(href='/pug/cli')
-              p.sec1-link pug-cli
-            a(href='/pug/engine')
-              p.sec1-link Engine
-
-        .sec1-middle
-          p.sec1-branding-text Pug JS
-          include ../../public/svgs/pug-logo-color.svg
+      include ../partials/nav-pug.pug
+      section.pug-body
+        .pug-fileNames
+          p index.pug
+          p index.html
           
-          
-        .sec1-bottom
-          p.pug-fileName index.pug
-          p.pug-fileName index.html
-          
-
-      section.sec2-pug
-        .index-pug-example 
+        .pug-syntax-intro
           pre.line-numbers
             code.language-pug #{pugSample}
           pre.line-numbers

@@ -2,79 +2,34 @@
 .pug-wrapper {
   background: var(--pug);
   min-height: 100vh;
-  padding-bottom: 6vw;
+  padding: 2vw 0;
 }
 
-.sec1-pug {
-  align-items: center;
-  background-image: url('/svgs/pug-sec1-background.svg');
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 85vh;
-  width: 100vw;
-}
-.sec1-top {
+.pug-top {
   align-items: flex-start;
   display: flex;
   height: 30%;
   justify-content: flex-end;
   width: 90%;
 }
-.sec1-links-group {
-  background: var(--alt-gray);
-  padding: 1vw;
-}
-.sec1-links-group > a {
-  display: block;
-  margin: 0.5vw;
-}
-.sec1-links-group > a:hover {
-  background: var(--main-dark);
-}
-.sec1-link {
-  color: var(--cream);
-  font-size: 2.2vw;
-  padding: 1vw auto;
-}
-.sec1-middle {
-  align-items: center;
-  background: rgba(253, 245, 230, 0.8);
-  display: flex;
-  height: 30%;
-  justify-content: space-evenly;
-  width: 90%;
-}
-#pug-logo-color {
-  height: 30vw;
-  width: 30vw;
-}
-.sec1-branding-text {
-  color: var(--main-dark);
-  font-size: 16vw;
-}
-.sec1-bottom {
+.pug-fileNames {
   align-items: flex-end;
   color: var(--main-dark);
   display: flex;
   font-size: 7vw;
   height: 20%;
   justify-content: space-between;
+  margin: 0 auto;
   width: 85%;
 }
 
-.sec2-pug {
-  
-}
-
-.index-pug-example {
+.pug-syntax-intro {
   display: flex;
   justify-content: space-evenly;
   margin: 1vw auto 4vw;
 }
 
-.index-pug-example > pre {
+.pug-syntax-intro > pre {
   font-size: 2vw !important;
   width: 35vw;
 }

@@ -1,0 +1,30 @@
+
+nav.nav-pug-wrapper
+
+  .nav-pug-left
+    .nav-pug-main
+      p Pug JS
+      a(href='/pug')
+        include ../../public/svgs/pug-logo-color.svg
+    .nav-pug-subgroup
+      a.sub(href='/pug/examples')
+        p Examples
+      a.sub(href='/pug/language')
+        p API
+      a.sub(href='/pug/api')
+        p Language
+      a.sub(href='/pug/cli')
+        p CLI
+      a.sub(href='/pug/engine')
+        p Engine
+
+  .nav-pug-right
+    a(href='/')
+      div(class=['nav-pug-icon', 'nav-pug-icon-home'])
+    a(href='/elasticsearch')
+      div(class=['nav-pug-icon', 'nav-pug-icon-es'])
+    a(href='/hapi')
+      div(class=['nav-pug-icon', 'nav-pug-icon-hapi'])
+    a(href='/redux')
+      div(class=['nav-pug-icon', 'nav-pug-icon-redux'])
+  

@@ -1,0 +1,84 @@
+
+/* Pug Nav Bar */
+.nav-pug-wrapper {
+  align-items: center;
+  display: flex;
+  margin: 2vw auto 0;
+  width: 95vw;
+}
+.nav-pug-left {
+  display: flex;
+  flex-direction: column;
+  
+  width: 80vw;
+}
+.nav-pug-main {
+  align-items: center;
+  background: var(--main-dark);
+  border-left: thick solid var(--pug-tan);
+  border-top: thick solid var(--pug-tan);
+  box-sizing: border-box;
+  display: flex;
+  height: 15vw;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.nav-pug-main > p {
+  color: var(--cream);
+  font-size: 12vw;
+}
+
+.nav-pug-subgroup {
+  align-items: center;
+  background: var(--pug-tan);
+  display: flex;
+  height: 5vw;
+  text-align: center;
+  width: 100%;
+}
+.sub {
+  color: var(--cream);
+  font-size: 1.2rem;
+  width: 20%;
+}
+.sub:hover {
+  background: var(--alt-gray);
+}
+
+#pug-logo-color {
+  height: 18vw;
+  width: 18vw;
+}
+.nav-pug-right {
+  align-items: center;
+  background: var(--pug-tan);
+  display: flex;
+  flex-wrap: wrap;
+  height: 20vw;
+  justify-content: space-evenly;
+  width: 20vw;
+}
+
+.nav-pug-icon {
+  background: var(--main-dark);
+  border: thin solid var(--orange);
+  border-radius: 1vw;
+  height: 9vw;
+  width: 9vw;
+}
+.nav-pug-icon-home {
+  background-image: url('/svgs/pug-icon-nav.svg');
+}
+.nav-pug-icon-es {
+  background-image: url('/svgs/es-icon-nav.svg');
+}
+.nav-pug-icon-hapi {
+  background-image: url('/svgs/hapi-icon-nav.svg');
+}
+.nav-pug-icon-redux {
+  background-image: url('/svgs/redux-icon-nav.svg');
+}
+
+.nav-pug-icon:hover {
+  box-shadow: 0 0 1vw var(--alt-gray);
+}

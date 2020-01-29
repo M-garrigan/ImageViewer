@@ -1,0 +1,30 @@
+/* globals */
+* {
+  /* box-sizing: border-box; */
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* variables */
+:root {
+  --main-dark: #1c1c1c;
+  --gray: #333;
+  --med-gray: #414141;
+  --lt-gray: #555;
+  --alt-gray: #262822;
+  --blue: #4666FF;
+  --red: #FF4666;
+  --green: #66FF46;
+  --purple: #8246FF;
+  --lt-blue: #46C2FF;
+  --orange: #FF8246;
+  --yellow: #FFDF46;
+  --cream: #fdf5e6;
+  --pug: #A86454;
+  --pug-tan: #B08D64;
+}
