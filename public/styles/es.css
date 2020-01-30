@@ -1,0 +1,46 @@
+
+.es-wrapper {
+  background: var(--cream);
+  min-height: 100vh;
+  
+}
+.es-sec1 {
+  background-image: linear-gradient(to bottom, var(--main-dark), var(--gray));
+  height: 80vh;
+  padding-top: 2.5vw;
+}
+.es-transition {
+  background-image: url('/svgs/es-transition.svg');
+  background-repeat: no-repeat;
+  height: 20vh;
+  width: 100vw;
+}
+
+.es-sec1-flex {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  margin: 0 auto;
+  width: 90%;
+}
+.es-sec1-color {
+  background-image: url('/svgs/es-color-logo.svg');
+  background-repeat: no-repeat;
+  height: 25vw;
+  width: 25vw;
+}
+.es-sec1-flex > p {
+  color: var(--cream);
+  font-size: 8vw;
+}
+
+.es-sec2 {
+  background-image: linear-gradient(to bottom, var(--main-dark), var(--gray));
+  height: 80vh;
+}
+.es-sec3 {
+  background-image: linear-gradient(to bottom, var(--main-dark), var(--gray));
+  height: 80vh;
+ 
+}
