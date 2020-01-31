@@ -7,17 +7,87 @@ html(lang='en')
       .es-sec1
         include ../partials/nav-es.pug
         .es-sec1-flex
+          .es-sec1-textbox
+            p.es-sec1-text1 a
+            p.es-sec1-text2 distributed 
+            p.es-sec1-text3 search &
+            p.es-sec1-text4 analytics
+            p.es-sec1-text5 engine
           .es-sec1-color
-          p.
-            a distributed search 
-            & analytics engine
-      .es-transition
+      
+      include ../mixins/es-spacer1.pug
+      +spacer1(
+        {
+          "A": "es-sp-cyan", 
+          "B": "es-sp-gray"
+        }
+      )
 
       .es-sec2
-      .es-transition
+        p.es-sec2-title distributed
+
+        p es has a distributed architecture which allows us to also have high scalability
+        p nodes can be added to a cluster even if on different servers 
+        p Tasks performed on es can be parallized
+        p Data in es is immutable
+        p es has primary node and primary shards that control the work delegation
+      
+      include ../mixins/es-spacer2.pug
+      +spacer2(
+        {
+          "A": "es-sp-green", 
+          "B": "es-sp-gray"
+        }
+      )
 
       .es-sec3
-      .es-transition
+        p.es-sec-title search
+
+        p Near Real Time Search
+        p Built on Lucene search engine library
+        p REST based api
+        p Search by term, phrase, similarity, prefix or by auto complete suggestions
+      
+      include ../mixins/es-spacer1.pug
+      +spacer1(
+        {
+          "A": "es-sp-red", 
+          "B": "es-sp-altgray"
+        }
+      )
+
+      .es-sec4
+        p.es-sec-title analytics
+
+        p Built in machine learning for time series data is available with 0 config
+        p Wide varieties of ways to aggregate data and es supports nested aggregates
+        p Tooling for building reports, summaries and dashboards
+      
+      include ../mixins/es-spacer2.pug
+      +spacer2(
+        {
+          "A": "es-sp-maroon", 
+          "B": "es-sp-gray"
+        }
+      )
+
+      .es-sec5
+        p.es-sec-title engine
+
+        p Es is build on top of Lucene
+        p Lucene is a mature and optimized text search library
+        p Inverted Index
+        p BKD Trees
+        p Column Stores
+        p Data serialized to JSON
+    
+      include ../mixins/es-spacer1.pug
+      +spacer1(
+        {
+          "A": "es-sp-maroon", 
+          "B": "es-sp-blue"
+        }
+      )
     
       h1 Elasticsearch 
 

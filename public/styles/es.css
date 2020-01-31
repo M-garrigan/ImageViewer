@@ -9,38 +9,101 @@
   height: 80vh;
   padding-top: 2.5vw;
 }
-.es-transition {
-  background-image: url('/svgs/es-transition.svg');
-  background-repeat: no-repeat;
+
+
+/* Mixin spacers */
+.es-sp-svg {
   height: 20vh;
   width: 100vw;
+}
+#es-sp-gray {
+  fill: var(--gray);
+}
+#es-sp-cyan {
+  fill: cyan;
+}
+#es-sp-2 {
+  height: 20vh;
+  width: 100vw;
+}
+#es-sp-blue {
+  fill: var(--blue);
+}
+#es-sp-maroon {
+  fill: maroon;
+}
+#es-sp-red {
+  fill: var(--red);
+}
+#es-sp-green {
+  fill: var(--green);
+}
+#es-sp-altgray {
+  fill: var(--alt-gray);
+}
+
+.es-sec-title {
+  font-size: 10vw;
 }
 
 .es-sec1-flex {
   align-items: center;
   display: flex;
   justify-content: space-evenly;
-  height: 100%;
+  height: calc(80vh - 20vw);
   margin: 0 auto;
-  width: 90%;
+  width: 100vw;
 }
 .es-sec1-color {
-  background-image: url('/svgs/es-color-logo.svg');
+  background-image: url('/svgs/es-color-logo-wht.svg');
   background-repeat: no-repeat;
-  height: 25vw;
-  width: 25vw;
+  height: 40vw;
+  width: 40vw;
 }
-.es-sec1-flex > p {
+.es-sec1-textbox {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: var(--cream);
+  font-size: 5vw;
+  height: 40vw;
+  width: 50vw;
+}
+.es-sec1-textbox > p {
+  color: var(--cream);
+  font-size: 6vw;
+}
+
+/* Section 2 */
+.es-sec2 {
+  background-image: linear-gradient(to bottom, cyan, var(--green));
+  height: 80vh;
+  margin-top: -5px;
+}
+.es-sec2-title {
+  color: var(--main-dark);
   font-size: 8vw;
 }
 
-.es-sec2 {
-  background-image: linear-gradient(to bottom, var(--main-dark), var(--gray));
-  height: 80vh;
-}
+
 .es-sec3 {
-  background-image: linear-gradient(to bottom, var(--main-dark), var(--gray));
+  background-image: linear-gradient(to bottom, var(--gray), var(--alt-gray));
   height: 80vh;
- 
+  margin-top: -5px;
+}
+
+.es-sec4 {
+  background-image: linear-gradient(to bottom, var(--red), maroon );
+  height: 80vh;
+  margin-top: -5px;
+}
+
+#es-tran1-rect {
+  fill: var(--green);
+  stroke: none;
+}
+#es-tran1-bump {
+  fill: var(--alt-gray);
+  stroke: none; 
 }

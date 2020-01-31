@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg2203"
+   version="1.1"
+   viewBox="0 0 64 64"
+   >
+  <metadata
+     id="metadata2209">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>icon / product-logo / 64x64px / elastic sesrch / color</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2207" />
+  <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+  <title
+     id="title2194">icon / product-logo / 64x64px / elastic sesrch / color</title>
+  <desc
+     id="desc2196">Created with Sketch.</desc>
+  <g
+     style="stroke-width:0.71226293"
+     transform="matrix(1.4024333,0,0,1.4055202,-12.849068,-9.9267535)"
+     id="g9779">
+    <path
+       style="opacity:1;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:2.13678908;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       d="M 54.796951,29.830061 A 22.76438,22.76438 0 0 1 32.032572,52.59444 22.76438,22.76438 0 0 1 9.2681924,29.830061 22.76438,22.76438 0 0 1 32.032572,7.0656816 22.76438,22.76438 0 0 1 54.796951,29.830061 Z"
+       id="path2211" />
+    <g
+       id="icon-/-product-logo-/-64x64px-/-elastic-sesrch-/-color"
+       transform="matrix(0.84322034,0,0,0.84322034,2.4162188,2.8470106)"
+       style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:0.84469372">
+      <g
+         style="stroke-width:0.84469372"
+         id="logo-elastic-search-64x64-color"
+         transform="translate(8,4.9995)">
+        <path
+           d="m 47.7246,9.708 0.003,-0.006 C 42.7746,3.774 35.3286,0 26.9996,0 16.4006,0 7.2326,6.112 2.8136,15 h 35.192 c 2.525,0 4.983,-0.87 6.915,-2.496 1.004,-0.845 1.943,-1.765 2.804,-2.796"
+           id="Fill-1"
+           style="fill:#fec514;stroke-width:0.84469372" />
+        <path
+           d="m 0,27.0005 c 0,2.422 0.324,4.767 0.922,7 H 34 c 3.866,0 7,-3.134 7,-7 0,-3.866 -3.134,-7 -7,-7 H 0.922 C 0.324,22.2335 0,24.5785 0,27.0005"
+           id="Fill-4"
+           style="fill:#343741;stroke-width:0.84469372" />
+        <path
+           d="m 47.7246,44.293 0.003,0.006 c -4.953,5.928 -12.399,9.702 -20.728,9.702 -10.599,0 -19.767,-6.112 -24.186,-15 h 35.192 c 2.525,0 4.983,0.87 6.915,2.496 1.004,0.845 1.943,1.765 2.804,2.796"
+           id="Fill-6"
+           style="fill:#00bfb3;stroke-width:0.84469372" />
+      </g>
+    </g>
+  </g>
+</svg>
