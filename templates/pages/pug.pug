@@ -5,26 +5,39 @@ html(lang='en')
   body
     .pug-wrapper
       include ../partials/nav-pug.pug
-      section.pug-body
-        .pug-fileNames
-          p index.pug
-          p index.html
-          
-        .pug-syntax-intro
-          pre.line-numbers
-            code.language-pug #{pugSample}
-          pre.line-numbers
-            code.language-html #{htmlSample}
+      section.pug-sec-dark
+        .pug-short-intro
+          p Pug is a templating language 
+          p that compiles to a HTML string. 
+          p It combines performance 
+          p with a clean, simple & terse syntax.
 
-        .pug-about
-          p.pug-bullet Pug is a templating language that compiles to a HTML string.
+        .pug-code-pre
+          p Write this.
+          p#pug-fat-arrow ==>
+          p Render that.
           
-          p.pug-bullet Pug is written in Javascript. 
-          
-          p.pug-bullet Pug can be used as a module or as a CLI tool.
-          
-          p.pug-bullet Pug is known for clean|simple|terse syntax.
+        .pug-code-sample
+          .pug-code-item
+            p index.pug
+            pre.line-numbers
+              code.language-pug #{pugSample}
 
+          .pug-code-item
+            p index.html
+            pre.line-numbers
+              code.language-html #{htmlSample}
+
+      include ../mixins/border-zigzag.pug
+      +borderZigzag()    
+
+      section.pug-sec-light
+        .pug-long-intro
+          p Pug is written in Javascript so it is native to NodeJS and the browser.
+          p Build reusable components with partials, mixins and blocks.
+          p Official Docs
+          p Official Source Code
+          p Pug's engine can produce fully compiled HTML or can produce a curried function for our future use.
 
   script(src='/js/prism.js')
   script(src='/js/prism-line-numbers.js')

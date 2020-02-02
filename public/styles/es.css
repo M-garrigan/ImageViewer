@@ -52,13 +52,13 @@
   justify-content: space-evenly;
   height: calc(80vh - 20vw);
   margin: 0 auto;
-  width: 100vw;
+  width: 90vw;
 }
 .es-sec1-color {
   background-image: url('/svgs/es-color-logo-wht.svg');
   background-repeat: no-repeat;
-  height: 40vw;
-  width: 40vw;
+  height: 100%;
+  width: 40%;
 }
 .es-sec1-textbox {
   align-items: center;
@@ -67,12 +67,8 @@
   justify-content: center;
   color: var(--cream);
   font-size: 5vw;
-  height: 40vw;
-  width: 50vw;
-}
-.es-sec1-textbox > p {
-  color: var(--cream);
-  font-size: 6vw;
+  height: 100%;
+  width: 60%;
 }
 
 /* Section 2 */

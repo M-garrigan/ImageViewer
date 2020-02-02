@@ -61,7 +61,7 @@
 
 .nav-pug-icon {
   background: var(--main-dark);
-  border: thin solid var(--orange);
+  border: thin solid var(--lt-pug);
   border-radius: 1vw;
   height: 9vw;
   width: 9vw;
