@@ -10,6 +10,7 @@ module.exports = ({
   'pug.css': 'public/styles/pug.css',
   'pug-api.css': 'public/styles/pug-api.css',
   'pug-engine.css': 'public/styles/pug-engine.css',
+  'pug-examples.css': 'public/styles/pug-examples.css',
   'prism-okaidia.css': 'node_modules/prismjs/themes/prism-okaidia.css',
   'prism-line-numbers.css': 'node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css'
 });

@@ -6,57 +6,46 @@
 }
 
 .pug-sec-dark {
-  background: rgba(255, 255, 255, 0.6
+  background: rgba(255, 255, 255, 0.8
   );
   box-shadow: 0px 0px 10px var(--main-dark) inset;
   border-radius: 1vw;
   color: var(--main-dark);
-  font-size: 3.5vw;
+  
   margin: 5vw auto 0;
-  padding: 5vw 0 5vw 5vw;
+  padding: 5vw 0;
   width: 90vw;
 }
 
 .pug-short-intro {
-  
-  width: 100%;
+  font-size: 3.5vw;
+  margin: auto;
+  width: 80%;
 }
 .pug-short-intro > p {
-  margin: 2vw 0 2vw 3vw;
+  margin: 2vw 0;
 }
 
 .pug-code-pre {
-  align-items: center;
+  font-size: 2.5vw;
   
-  border-radius: 1vw;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 10vw auto 2vw;
-  width: 75vw;
-}
-
-.pug-code-pre > p {
-  color: var(--main-dark);
-  font-size: 4vw;
-}
-
-
-#pug-fat-arrow {
-  border: thin solid black;
-  border-radius: 1vw;
-  font-size: 8vw;
+  margin: 5vw auto 2vw;
+  width: 80%;
 }
 
 .pug-code-sample {
   display: flex;
   justify-content: space-evenly;
   margin: 1vw auto 4vw;
+  width: 95%;
 }
 .pug-code-item {
-  background: var(--lt-pug);
+  background: var(--orange);
   border-radius: 1vw;
   padding: 0 1vw 1vw;
+  
   text-align: center;
+  width: 45%;
 }
 .pug-code-item > p {
   color: var(--main-dark);
@@ -64,8 +53,7 @@
   padding: 1vw;
 }
 .pug-code-item > pre {
-  font-size: 2vw !important;
-  width: 35vw;
+  font-size: 1.6vw !important;
 }
 
 
@@ -77,8 +65,13 @@
 .pug-sec-light {
   background: var(--lt-pug);
   color: var(--main-dark);
-  font-size: 3.5vw;
-  height: 80vw;
+  font-size: 3vw;
+
+  margin-top: -5px;
   padding: 5vw;
   width: 100vw;
+}
+.pug-long-intro {
+  margin: 5vw auto;
+  width: 80%;
 }

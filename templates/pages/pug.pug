@@ -7,15 +7,11 @@ html(lang='en')
       include ../partials/nav-pug.pug
       section.pug-sec-dark
         .pug-short-intro
-          p Pug is a templating language 
-          p that compiles to a HTML string. 
-          p It combines performance 
-          p with a clean, simple & terse syntax.
+          p Pug is a templating language that compiles to a HTML string. 
+          p It combines performance with a clean, simple & terse syntax.
 
         .pug-code-pre
-          p Write this.
-          p#pug-fat-arrow ==>
-          p Render that.
+          p Below is an example of the file we can write, which ends in a .pug file extension. The code on the right is the rendered .html file that Pug JS has produced.
           
         .pug-code-sample
           .pug-code-item
@@ -27,6 +23,8 @@ html(lang='en')
             p index.html
             pre.line-numbers
               code.language-html #{htmlSample}
+
+        a(href='/pug/examples'): p See More Examples
 
       include ../mixins/border-zigzag.pug
       +borderZigzag()    

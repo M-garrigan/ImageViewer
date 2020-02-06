@@ -1,0 +1,11 @@
+
+.pExp {
+  background: rgba(255, 255, 255, 0.8
+  );
+  box-shadow: 0px 0px 10px var(--main-dark) inset;
+  border-radius: 1vw;
+  color: var(--main-dark);
+  margin: 5vw auto 0;
+  padding: 5vw 0;
+  width: 95vw;
+}
